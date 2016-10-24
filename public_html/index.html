@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <title>Registro virtuale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" media="all" href="lib/bootstrap/bootstrap.min.css" />	
+        <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />	 		
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />	 	
+    </head>
+    <body ng-app="ngregister">
+        <div id="all" class="" ng-controller="AppController as app">
+            <app-nav items="app.nav"></app-nav>
+            <div ng-view class="container"></div>
+            
+            <script src="lib/jquery/jquery-3.1.0.min.js"></script>
+            <script src="lib/bootstrap/bootstrap.min.js"></script>
+            <script src="lib/angular/angular.min.js"></script>
+            <script src="lib/angular/angular-route.min.js"></script>
+            <!-- modulo utilizzato e sue componenti -->
+            
+            <script src="js/app.js"></script>
+            <script src="js/controllers/appController.js"></script>
+            <script src="js/controllers/registerController.js"></script>
+            <script src="js/directives/appNavDirective.js"></script>
+        </div>
+    </body>
+</html>
